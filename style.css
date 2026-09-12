@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #07111f;
+  color: #eef5ff;
+}
+.shell {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+  padding: 70px 0 40px;
+}
+.hero { text-align: center; margin-bottom: 32px; }
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #294563;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: .12em;
+}
+h1 { font-size: clamp(36px, 7vw, 70px); margin: 18px 0 10px; }
+.hero p { color: #9fb2c9; font-size: 17px; }
+.chat {
+  min-height: 360px;
+  padding: 22px;
+  border: 1px solid #20344c;
+  border-radius: 22px;
+  background: #0b1829;
+}
+.msg {
+  max-width: 82%;
+  padding: 13px 16px;
+  margin: 10px 0;
+  border-radius: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+.user { margin-left: auto; background: #163552; }
+.ai { background: #111f31; border: 1px solid #213a55; }
+.composer { display: flex; gap: 10px; margin-top: 14px; }
+input {
+  flex: 1; padding: 15px 16px; border-radius: 14px;
+  border: 1px solid #294563; background: #0b1829; color: white;
+}
+button {
+  border: 0; border-radius: 14px; padding: 0 20px;
+  background: #4f8cff; color: white; font-weight: 700; cursor: pointer;
+}
+.status { color: #7f94ac; font-size: 13px; text-align: center; }
+@media (max-width: 650px) {
+  .composer { flex-direction: column; }
+  button { height: 48px; }
+  .msg { max-width: 94%; }
+}
